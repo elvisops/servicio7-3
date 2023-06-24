@@ -1,1 +1,120 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/*CONFIGURACION PERSONALIZADA*/
+::ng-deep .mat-input-element {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    border-radius: 4px;
+    padding: 0.75em 0.75em 0 0.75em;
+    border: 1px solid #f94747;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: transparent !important;
+}
+
+.mdc-text-field--filled::before .mdc-text-field {
+    background-color: transparent !important;
+}
+
+mat-card-header {
+    background-color: #12293f;
+    color: white;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 10px;
+}
+
+/*Colores*/
+
+.txtops-indigo {
+    color: #12293f !important;
+}
+
+.txtops-chartreuse {
+    color: #dfff00 !important;
+}
+
+.txtops-gray {
+    color: #616161 !important;
+}
+
+.txtwhite {
+    color: #FFFFFF !important;
+}
+
+.bgops-indigo {
+    background-color: #12293f !important;
+}
+
+.bgops-chartreuse {
+    background-color: #dfff00 !important;
+}
+
+.bgops-gray {
+    background-color: #616161 !important;
+}
+
+.bgwhite {
+    background-color: #FFFFFF !important;
+}
+
+.pull-to-end {
+    justify-content: flex-end;
+}
+
+.card {
+    border: 2px solid #616161 !important;
+    box-shadow: 0px 10px 10px #757575 !important;
+}
+
+/* load */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.circle-loader {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
